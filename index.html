@@ -3,144 +3,543 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>EPIC Retreat 2026 — Trip Itinerary</title>
+  <title>EPIC Retreat 2026 · Park City, Utah</title>
   <style>
-    :root { --bg:#f7f8fb; --card:#ffffff; --text:#1f2937; --muted:#6b7280; --accent:#1d4ed8; --warn:#b45309; --warnbg:#fffbeb; --border:#e5e7eb; }
-    body { margin:0; font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; background:var(--bg); color:var(--text); }
-    .wrap { max-width: 980px; margin: 0 auto; padding: 32px 18px 48px; }
-    h1 { margin: 0 0 6px; font-size: 30px; }
-    .subtitle { color: var(--muted); margin-bottom: 18px; }
-    .grid { display:grid; grid-template-columns: 1.2fr .8fr; gap: 16px; }
-    .card { background:var(--card); border:1px solid var(--border); border-radius:16px; padding:18px; box-shadow: 0 1px 2px rgba(0,0,0,.03); }
-    h2 { font-size: 20px; margin: 0 0 12px; }
-    h3 { font-size: 16px; margin: 14px 0 8px; }
-    ul { margin: 8px 0 0 20px; }
-    .meta { display:grid; grid-template-columns: 1fr 1fr; gap: 10px 14px; }
-    .pill { display:inline-block; padding:6px 10px; border-radius:999px; background:#e0ecff; color:#174ea6; font-size:12px; font-weight:600; }
-    .small { font-size: 13px; color: var(--muted); }
-    .day { border-top:1px solid var(--border); padding-top:12px; margin-top:12px; }
-    .warn { background: var(--warnbg); border:1px solid #f59e0b55; color: var(--text); border-radius:12px; padding:12px 14px; }
-    .warn strong { color: var(--warn); }
-    a { color: var(--accent); text-decoration: none; }
+    :root {
+      --bg: #f6f4ee;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --teal: #2d8a7a;
+      --teal-dark: #1f6f63;
+      --gold: #c9a84c;
+      --gold-bg: #fff7df;
+      --border: #e7e2d8;
+      --shadow: 0 8px 24px rgba(0,0,0,.06);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: radial-gradient(circle at top, #faf8f2 0%, var(--bg) 52%, #f2efe8 100%);
+      color: var(--text);
+      line-height: 1.45;
+    }
+    a { color: var(--teal); text-decoration: none; }
     a:hover { text-decoration: underline; }
-    .two { display:grid; grid-template-columns: 1fr 1fr; gap: 14px; }
-    .k { font-size: 12px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); margin-bottom: 3px; }
-    .v { font-weight: 600; }
-    .footer { margin-top: 18px; font-size: 12px; color: var(--muted); }
-    @media (max-width: 760px){ .grid,.two,.meta{ grid-template-columns:1fr; } }
+    .wrap {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0 16px 40px;
+    }
+    .hero {
+      padding: 42px 16px 28px;
+      text-align: center;
+      color: #fff;
+      background: linear-gradient(155deg, #1f6f63 0%, #2d8a7a 35%, #c9a84c 100%);
+      border-bottom: 1px solid rgba(255,255,255,.18);
+      box-shadow: inset 0 -1px 0 rgba(255,255,255,.12);
+    }
+    .hero-inner { max-width: 1080px; margin: 0 auto; }
+    .eyebrow {
+      font-size: 12px;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      opacity: .85;
+      margin-bottom: 10px;
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(34px, 6vw, 56px);
+      line-height: 1.05;
+      font-weight: 750;
+    }
+    .subtitle {
+      margin: 14px auto 18px;
+      max-width: 760px;
+      font-size: 17px;
+      opacity: .96;
+    }
+    .pill-row {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      border: 1px solid rgba(255,255,255,.3);
+      background: rgba(255,255,255,.14);
+      backdrop-filter: blur(8px);
+      border-radius: 999px;
+      padding: 8px 12px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .notice {
+      margin-top: -18px;
+      background: var(--gold-bg);
+      border: 1px solid rgba(201,168,76,.35);
+      color: #5d4a1a;
+      border-radius: 18px;
+      padding: 16px 18px;
+      box-shadow: var(--shadow);
+    }
+    .notice strong { color: #8b6d19; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 16px;
+      margin-top: 16px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 18px;
+      box-shadow: var(--shadow);
+    }
+    .card h2 {
+      margin: 0 0 12px;
+      font-size: 20px;
+      color: var(--teal-dark);
+    }
+    .meta {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+    .meta-item {
+      background: #fbfaf7;
+      border: 1px solid #f0ebe2;
+      border-radius: 14px;
+      padding: 12px;
+    }
+    .label {
+      font-size: 11px;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 4px;
+    }
+    .value { font-weight: 650; }
+    .small { font-size: 13px; color: var(--muted); }
+    .section {
+      margin-top: 18px;
+      border-top: 1px solid #efe9dd;
+      padding-top: 16px;
+    }
+    ul { margin: 8px 0 0 20px; }
+    li { margin: 8px 0; }
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+    .route {
+      background: #f8fbfa;
+      border: 1px solid #e1eeea;
+      border-radius: 14px;
+      padding: 12px;
+    }
+    .route .k { font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+    .route .v { font-weight: 700; margin-top: 4px; }
+    .route .m { font-size: 13px; color: var(--muted); margin-top: 4px; }
+    .day {
+      margin-top: 12px;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      overflow: hidden;
+    }
+    .day summary {
+      list-style: none;
+      cursor: pointer;
+      padding: 16px 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      background: linear-gradient(180deg, #fff, #fcfbf8);
+    }
+    .day summary::-webkit-details-marker { display: none; }
+    .day-title {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+    .day-title strong { font-size: 16px; }
+    .day-title span { font-size: 13px; color: var(--muted); }
+    .day-badge {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--teal-dark);
+      background: #eaf5f2;
+      border: 1px solid #d8ebe6;
+      padding: 7px 10px;
+      border-radius: 999px;
+      white-space: nowrap;
+    }
+    .day-body {
+      padding: 0 18px 16px;
+      border-top: 1px solid #f1ece3;
+    }
+    .timeline {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .timeline li {
+      display: grid;
+      grid-template-columns: 105px 1fr;
+      gap: 10px;
+      padding: 12px 0;
+      border-bottom: 1px solid #f4efe7;
+      margin: 0;
+    }
+    .timeline li:last-child { border-bottom: none; }
+    .time {
+      font-size: 12px;
+      font-weight: 800;
+      color: var(--teal-dark);
+      text-transform: uppercase;
+      letter-spacing: .06em;
+    }
+    .event-title { font-weight: 700; }
+    .event-note { font-size: 13px; color: var(--muted); margin-top: 2px; }
+    .alert {
+      background: #fff8e2;
+      border-left: 4px solid var(--gold);
+      padding: 10px 12px;
+      border-radius: 10px;
+    }
+    .alert strong { color: #8b6d19; }
+    .checklist {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .checklist li {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      padding: 10px 0;
+      border-bottom: 1px solid #f1ece3;
+      margin: 0;
+    }
+    .checklist li:last-child { border-bottom: none; }
+    .check {
+      width: 18px;
+      height: 18px;
+      border-radius: 5px;
+      border: 2px solid var(--teal);
+      margin-top: 2px;
+      flex: 0 0 18px;
+      background: linear-gradient(180deg, #fff, #eef7f5);
+    }
+    .footer {
+      margin: 18px 0 0;
+      font-size: 12px;
+      color: var(--muted);
+      text-align: center;
+      padding-bottom: 8px;
+    }
+    @media (max-width: 860px) {
+      .grid, .two-col, .meta { grid-template-columns: 1fr; }
+      .timeline li { grid-template-columns: 1fr; }
+      .day summary { align-items: flex-start; }
+    }
   </style>
 </head>
 <body>
-  <div class="wrap">
-    <h1>EPIC Retreat 2026</h1>
-    <div class="subtitle">Draft itinerary built from the retreat page and the rental-car confirmation in Brooke’s HEA inbox.</div>
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="eyebrow">EPIC Retreat 2026</div>
+      <h1>Park City, Utah</h1>
+      <div class="subtitle">A phone-friendly trip itinerary for the HEA Epic Retreat, built from the retreat page and the rental-car email in Brooke’s HEA inbox.</div>
+      <div class="pill-row">
+        <span class="pill">📅 August 6–9, 2026</span>
+        <span class="pill">🏨 Goldener Hirsch Auberge Collection</span>
+        <span class="pill">✈️ Fly into SLC</span>
+      </div>
+    </div>
+  </header>
 
-    <div class="warn card" style="margin-bottom:16px;">
-      <strong>Important mismatch:</strong> the retreat page says to fly into <strong>Salt Lake City Airport (SLC)</strong> and drive ~45 minutes to Park City, but the rental-car email I found is for <strong>Idaho Falls Air-Alamo (IDA)</strong>.
-      That reservation may belong to a different trip or need to be changed. I’ve included it below so you can verify it quickly.
+  <div class="wrap">
+    <div class="notice">
+      <strong>Heads up:</strong> the retreat page says to fly into <strong>Salt Lake City Airport (SLC)</strong> and drive about 45 minutes to Park City.
+      The rental-car email I found is for <strong>Idaho Falls Air-Alamo (IDA)</strong>, which does <em>not</em> match the retreat logistics.
+      I kept it in the itinerary so it’s easy to verify before the trip.
     </div>
 
     <div class="grid">
-      <div class="card">
+      <section class="card">
         <h2>Trip overview</h2>
         <div class="meta">
-          <div>
-            <div class="k">Destination</div>
-            <div class="v">Goldener Hirsch Auberge Collection</div>
+          <div class="meta-item">
+            <div class="label">Destination</div>
+            <div class="value">Goldener Hirsch Auberge Collection</div>
           </div>
-          <div>
-            <div class="k">Address</div>
-            <div class="v">7520 Royal St, Park City, UT 84060</div>
+          <div class="meta-item">
+            <div class="label">Address</div>
+            <div class="value">7520 Royal St, Park City, UT 84060</div>
           </div>
-          <div>
-            <div class="k">Retreat dates</div>
-            <div class="v">August 6–9, 2026</div>
+          <div class="meta-item">
+            <div class="label">Room rate</div>
+            <div class="value">$429/night + taxes</div>
           </div>
-          <div>
-            <div class="k">Website</div>
-            <div class="v"><a href="https://m.healthexpertsalliance.com/epic-retreat-members-2026">Epic Retreat page</a></div>
-          </div>
-          <div>
-            <div class="k">Hotel / room block</div>
-            <div class="v">Book your own room at Goldener Hirsch</div>
-          </div>
-          <div>
-            <div class="k">Room rate</div>
-            <div class="v">$429/night + taxes</div>
+          <div class="meta-item">
+            <div class="label">Room policy</div>
+            <div class="value">Book your own room</div>
           </div>
         </div>
 
-        <h3>What the retreat page says</h3>
-        <ul>
-          <li>Thursday, Aug 6: Welcome reception in the evening</li>
-          <li>Friday, Aug 7 & Saturday, Aug 8: intensive mastermind sessions, strategic breakouts, and group problem-solving</li>
-          <li>Sunday, Aug 9: final session and departures in the late morning</li>
-          <li>Lunch is provided during sessions; breakfast and dinner are on your own</li>
-          <li>Fly into Salt Lake City Airport (SLC) — about 40 miles / ~45 minutes to the resort</li>
-          <li>Transportation: rent a car or book a shuttle</li>
-        </ul>
-
-        <div class="day">
-          <h3>Suggested day-by-day plan</h3>
+        <div class="section">
+          <h2>What the retreat page says</h2>
           <ul>
-            <li><strong>Thu, Aug 6:</strong> Arrive in Utah, pick up transportation, drive to Park City, check in, and attend the welcome reception.</li>
-            <li><strong>Fri, Aug 7:</strong> Full day of sessions and breakouts. Lunch on site; dinner on your own.</li>
-            <li><strong>Sat, Aug 8:</strong> Full day of mastermind sessions, networking, and group problem-solving.</li>
-            <li><strong>Sun, Aug 9:</strong> Final session in the morning, then depart after closing activities.</li>
+            <li>Thursday, August 6: welcome reception in the evening</li>
+            <li>Friday, August 7 and Saturday, August 8: intensive mastermind sessions, strategic breakouts, and group problem-solving</li>
+            <li>Sunday, August 9: final session and departures in the late morning</li>
+            <li>Lunch is provided during sessions; breakfast and dinner are on your own</li>
+            <li>Valet parking: $40/car</li>
+            <li>Package handling: $7/package · Porterage: $10 round trip</li>
           </ul>
         </div>
-      </div>
 
-      <div class="card">
+        <div class="section">
+          <h2>Day-by-day</h2>
+
+          <details class="day" open>
+            <summary>
+              <div class="day-title">
+                <strong>Day 1 — Thursday, Aug 6</strong>
+                <span>Travel day, hotel check-in, welcome reception</span>
+              </div>
+              <div class="day-badge">Arrival</div>
+            </summary>
+            <div class="day-body">
+              <ul class="timeline">
+                <li>
+                  <div class="time">Morning</div>
+                  <div>
+                    <div class="event-title">Fly into Salt Lake City Airport (SLC)</div>
+                    <div class="event-note">The retreat page says SLC is about 40 miles / ~45 minutes from the resort.</div>
+                  </div>
+                </li>
+                <li>
+                  <div class="time">After landing</div>
+                  <div>
+                    <div class="event-title">Pick up transportation and drive to Park City</div>
+                    <div class="event-note">Use a rental car or shuttle; the retreat page says you’re responsible for your own transport.</div>
+                  </div>
+                </li>
+                <li>
+                  <div class="time">Check-in</div>
+                  <div>
+                    <div class="event-title">Check in at Goldener Hirsch</div>
+                    <div class="event-note">Room block hotel for the retreat.</div>
+                  </div>
+                </li>
+                <li>
+                  <div class="time">Evening</div>
+                  <div>
+                    <div class="event-title">Welcome reception</div>
+                    <div class="event-note">Official event kickoff.</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="day">
+            <summary>
+              <div class="day-title">
+                <strong>Day 2 — Friday, Aug 7</strong>
+                <span>Mastermind sessions and strategic breakouts</span>
+              </div>
+              <div class="day-badge">Full day</div>
+            </summary>
+            <div class="day-body">
+              <ul class="timeline">
+                <li>
+                  <div class="time">Morning</div>
+                  <div>
+                    <div class="event-title">Breakfast on your own</div>
+                    <div class="event-note">Then head into the first session block.</div>
+                  </div>
+                </li>
+                <li>
+                  <div class="time">Daytime</div>
+                  <div>
+                    <div class="event-title">Intensive mastermind sessions</div>
+                    <div class="event-note">Strategic breakouts and group problem-solving.</div>
+                  </div>
+                </li>
+                <li>
+                  <div class="time">Lunch</div>
+                  <div>
+                    <div class="event-title">Lunch provided onsite</div>
+                    <div class="event-note">The retreat page says lunch is included during sessions.</div>
+                  </div>
+                </li>
+                <li>
+                  <div class="time">Evening</div>
+                  <div>
+                    <div class="event-title">Dinner on your own</div>
+                    <div class="event-note">Time to decompress or connect with other attendees.</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="day">
+            <summary>
+              <div class="day-title">
+                <strong>Day 3 — Saturday, Aug 8</strong>
+                <span>Second full mastermind day</span>
+              </div>
+              <div class="day-badge">Full day</div>
+            </summary>
+            <div class="day-body">
+              <ul class="timeline">
+                <li>
+                  <div class="time">Morning</div>
+                  <div>
+                    <div class="event-title">Breakfast on your own</div>
+                    <div class="event-note">Get to the venue ready for sessions.</div>
+                  </div>
+                </li>
+                <li>
+                  <div class="time">Daytime</div>
+                  <div>
+                    <div class="event-title">Continued sessions, networking, and problem-solving</div>
+                    <div class="event-note">The second deep-work day of the retreat.</div>
+                  </div>
+                </li>
+                <li>
+                  <div class="time">Lunch</div>
+                  <div>
+                    <div class="event-title">Lunch onsite</div>
+                    <div class="event-note">Plan to stay near the event through the full day.</div>
+                  </div>
+                </li>
+                <li>
+                  <div class="time">Evening</div>
+                  <div>
+                    <div class="event-title">Dinner on your own</div>
+                    <div class="event-note">Good night for a quiet reset before departure day.</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="day">
+            <summary>
+              <div class="day-title">
+                <strong>Day 4 — Sunday, Aug 9</strong>
+                <span>Final session and departure</span>
+              </div>
+              <div class="day-badge">Departure</div>
+            </summary>
+            <div class="day-body">
+              <ul class="timeline">
+                <li>
+                  <div class="time">Morning</div>
+                  <div>
+                    <div class="event-title">Final session and late-morning departures</div>
+                    <div class="event-note">The retreat page calls out departures in the late morning.</div>
+                  </div>
+                </li>
+                <li>
+                  <div class="time">Before leaving</div>
+                  <div>
+                    <div class="event-title">Hotel checkout</div>
+                    <div class="event-note">Confirm checkout timing based on your room and flight.</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </details>
+        </div>
+      </section>
+
+      <aside class="card">
         <h2>Quick reference</h2>
-        <div class="two">
-          <div>
+        <div class="two-col">
+          <div class="route">
             <div class="k">Hotel maps</div>
-            <div class="v"><a href="https://www.google.com/maps/search/?api=1&query=7520+Royal+St+Park+City+UT+84060">Open map</a></div>
+            <div class="v"><a href="https://www.google.com/maps/search/?api=1&query=7520+Royal+St+Park+City+UT+84060" target="_blank">Open map</a></div>
+            <div class="m">Goldener Hirsch Auberge Collection</div>
           </div>
-          <div>
+          <div class="route">
             <div class="k">SLC airport maps</div>
-            <div class="v"><a href="https://www.google.com/maps/search/?api=1&query=Salt+Lake+City+International+Airport">Open map</a></div>
+            <div class="v"><a href="https://www.google.com/maps/search/?api=1&query=Salt+Lake+City+International+Airport" target="_blank">Open map</a></div>
+            <div class="m">Recommended airport</div>
           </div>
-          <div>
+          <div class="route">
             <div class="k">Parking</div>
             <div class="v">Valet: $40/car</div>
+            <div class="m">At the resort</div>
           </div>
-          <div>
-            <div class="k">Fees</div>
-            <div class="v">Package handling $7/package · Porterage $10 round trip</div>
+          <div class="route">
+            <div class="k">Airport distance</div>
+            <div class="v">~45 minutes</div>
+            <div class="m">SLC → resort</div>
           </div>
         </div>
 
-        <div class="day">
-          <h3>Airport / transportation reminder</h3>
-          <p class="small" style="margin-top:0;">The retreat page specifically recommends SLC. If you’re not already committed to the Idaho Falls reservation, this is the detail to confirm first.</p>
+        <div class="section">
+          <h2>Rental car found</h2>
+          <div class="route">
+            <div class="k">Vendor</div>
+            <div class="v">Alamo Reservations</div>
+            <div class="k" style="margin-top:8px;">Confirmation</div>
+            <div class="v">397771467</div>
+            <div class="k" style="margin-top:8px;">Pick-up</div>
+            <div class="v">Thu, Aug 6, 2026 · 10:00 AM</div>
+            <div class="m">Idaho Falls Air-Alamo (IDA)</div>
+            <div class="k" style="margin-top:8px;">Return</div>
+            <div class="v">Sun, Aug 9, 2026 · 2:30 PM</div>
+            <div class="m">Idaho Falls Air-Alamo (IDA)</div>
+            <div class="k" style="margin-top:8px;">Estimated total</div>
+            <div class="v">$302.00</div>
+          </div>
+          <div class="small" style="margin-top:10px;">
+            This looks like a different trip than the Park City itinerary. I’d verify it before relying on it.
+          </div>
         </div>
 
-        <div class="day">
-          <h3>Rental car found in HEA inbox</h3>
-          <div class="k">Vendor</div><div class="v">Alamo Reservations</div>
-          <div class="k" style="margin-top:8px;">Confirmation</div><div class="v">397771467</div>
-          <div class="k" style="margin-top:8px;">Vehicle</div><div class="v">Midsize vehicle (Toyota Corolla or similar)</div>
-          <div class="k" style="margin-top:8px;">Pick-up</div><div class="v">Thu, Aug 6, 2026 · 10:00 AM · Idaho Falls Air-Alamo (IDA)</div>
-          <div class="k" style="margin-top:8px;">Return</div><div class="v">Sun, Aug 9, 2026 · 2:30 PM · Idaho Falls Air-Alamo (IDA)</div>
-          <div class="k" style="margin-top:8px;">Estimated total</div><div class="v">$302.00</div>
-          <div class="k" style="margin-top:8px;">Maps</div><div class="v"><a href="https://www.google.com/maps/search/?api=1&query=2140+N+Skyline+Dr+Idaho+Falls+ID+83402">IDA Alamo location</a></div>
+        <div class="section">
+          <h2>Things to remember</h2>
+          <ul class="checklist">
+            <li><span class="check"></span><span>Use <strong>SLC</strong> unless you confirm the IDA car reservation was intentional.</span></li>
+            <li><span class="check"></span><span>Book or confirm your room at <strong>Goldener Hirsch</strong>.</span></li>
+            <li><span class="check"></span><span>Plan for lunch onsite, breakfast and dinner on your own.</span></li>
+            <li><span class="check"></span><span>Leave extra time for airport pickup and mountain drive.</span></li>
+            <li><span class="check"></span><span>Keep the rental confirmation number handy: <strong>397771467</strong>.</span></li>
+          </ul>
         </div>
 
-        <div class="footer">
-          Note: the Alamo reservation is at IDA, which does <em>not</em> match the retreat page’s SLC instructions. Verify before travel.
+        <div class="section">
+          <h2>Useful links</h2>
+          <ul>
+            <li><a href="https://m.healthexpertsalliance.com/epic-retreat-members-2026" target="_blank">EPIC Retreat page</a></li>
+            <li><a href="https://www.google.com/maps/search/?api=1&query=7520+Royal+St+Park+City+UT+84060" target="_blank">Hotel map</a></li>
+            <li><a href="https://www.google.com/maps/search/?api=1&query=Salt+Lake+City+International+Airport" target="_blank">SLC map</a></li>
+          </ul>
         </div>
-      </div>
+      </aside>
     </div>
 
-    <div class="card" style="margin-top:16px;">
-      <h2>Things to confirm next</h2>
-      <ul>
-        <li>Is the rental car reservation supposed to be changed from IDA to SLC?</li>
-        <li>Have flights been booked yet, and if so what are the arrival / departure times?</li>
-        <li>Do you want this turned into a calendar-friendly version with departure reminders?</li>
-      </ul>
+    <div class="footer">
+      Built as a simple mobile-friendly itinerary page for quick access on your phone.
     </div>
   </div>
 </body>
