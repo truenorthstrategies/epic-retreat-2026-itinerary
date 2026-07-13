@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>EPIC Retreat 2026 · Park City, Utah</title>
+  <title>EPIC Retreat 2026 · Work Trip</title>
   <style>
     :root {
       --bg: #f6f4ee;
@@ -56,7 +56,7 @@
     }
     .subtitle {
       margin: 14px auto 18px;
-      max-width: 760px;
+      max-width: 820px;
       font-size: 17px;
       opacity: .96;
     }
@@ -79,7 +79,6 @@
       font-size: 13px;
       font-weight: 600;
     }
-
     .notice {
       margin-top: -18px;
       background: var(--gold-bg);
@@ -90,10 +89,9 @@
       box-shadow: var(--shadow);
     }
     .notice strong { color: #8b6d19; }
-
     .grid {
       display: grid;
-      grid-template-columns: 1.15fr .85fr;
+      grid-template-columns: 1.1fr .9fr;
       gap: 16px;
       margin-top: 16px;
     }
@@ -196,7 +194,7 @@
     }
     .timeline li {
       display: grid;
-      grid-template-columns: 105px 1fr;
+      grid-template-columns: 115px 1fr;
       gap: 10px;
       padding: 12px 0;
       border-bottom: 1px solid #f4efe7;
@@ -242,6 +240,29 @@
       flex: 0 0 18px;
       background: linear-gradient(180deg, #fff, #eef7f5);
     }
+    .btn-row {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 14px;
+      border-radius: 12px;
+      border: 1px solid #d8ebe6;
+      background: #eef8f5;
+      color: var(--teal-dark);
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .btn.primary {
+      background: linear-gradient(180deg, #2d8a7a, #227365);
+      border-color: #1f6f63;
+      color: #fff;
+    }
     .footer {
       margin: 18px 0 0;
       font-size: 12px;
@@ -260,21 +281,21 @@
   <header class="hero">
     <div class="hero-inner">
       <div class="eyebrow">EPIC Retreat 2026</div>
-      <h1>Park City, Utah</h1>
-      <div class="subtitle">A phone-friendly trip itinerary for the HEA Epic Retreat, built from the retreat page and the rental-car email in Brooke’s HEA inbox.</div>
+      <h1>Work Trip · Park City, Utah</h1>
+      <div class="subtitle">A mobile-friendly itinerary for Brooke’s work trip to the EPIC Retreat, with the Thursday team meeting and event start time built in.</div>
       <div class="pill-row">
         <span class="pill">📅 August 6–9, 2026</span>
         <span class="pill">🏨 Goldener Hirsch Auberge Collection</span>
-        <span class="pill">✈️ Fly into SLC</span>
+        <span class="pill">🚗 Driving from Rigby</span>
       </div>
     </div>
   </header>
 
   <div class="wrap">
     <div class="notice">
-      <strong>Heads up:</strong> the retreat page says to fly into <strong>Salt Lake City Airport (SLC)</strong> and drive about 45 minutes to Park City.
-      The rental-car email I found is for <strong>Idaho Falls Air-Alamo (IDA)</strong>, which does <em>not</em> match the retreat logistics.
-      I kept it in the itinerary so it’s easy to verify before the trip.
+      <strong>Note:</strong> this version is set up for your <strong>work trip</strong> use case.
+      It does <em>not</em> include flights, Salt Lake City, hotel rates, room policy, lunch details, or estimated costs.
+      It does include a clickable resort link and directions so you can open Google Maps and navigate from there.
     </div>
 
     <div class="grid">
@@ -290,256 +311,91 @@
             <div class="value">7520 Royal St, Park City, UT 84060</div>
           </div>
           <div class="meta-item">
-            <div class="label">Room rate</div>
-            <div class="value">$429/night + taxes</div>
+            <div class="label">Trip type</div>
+            <div class="value">Work trip / attendee itinerary</div>
           </div>
           <div class="meta-item">
-            <div class="label">Room policy</div>
-            <div class="value">Book your own room</div>
+            <div class="label">Travel style</div>
+            <div class="value">Driving from Rigby with rental car pickup</div>
           </div>
         </div>
 
         <div class="section">
-          <h2>What the retreat page says</h2>
+          <h2>Thursday, August 6</h2>
           <ul>
-            <li>Thursday, August 6: welcome reception in the evening</li>
-            <li>Friday, August 7 and Saturday, August 8: intensive mastermind sessions, strategic breakouts, and group problem-solving</li>
-            <li>Sunday, August 9: final session and departures in the late morning</li>
-            <li>Lunch is provided during sessions; breakfast and dinner are on your own</li>
-            <li>Valet parking: $40/car</li>
-            <li>Package handling: $7/package · Porterage: $10 round trip</li>
+            <li>Drive from Rigby to Park City.</li>
+            <li>Pick up the rental car before heading into the event schedule.</li>
+            <li><strong>2:00 PM:</strong> team meeting.</li>
+            <li><strong>3:00 PM:</strong> event starts.</li>
+            <li>Evening: continue with the retreat agenda once the final schedule is shared.</li>
           </ul>
         </div>
 
         <div class="section">
-          <h2>Day-by-day</h2>
+          <h2>Friday, August 7</h2>
+          <ul>
+            <li>Reserve this day for the final agenda once it’s sent over.</li>
+            <li>We’ll plug in the exact blocks when you share the work-trip schedule.</li>
+          </ul>
+        </div>
 
-          <details class="day" open>
-            <summary>
-              <div class="day-title">
-                <strong>Day 1 — Thursday, Aug 6</strong>
-                <span>Travel day, hotel check-in, welcome reception</span>
-              </div>
-              <div class="day-badge">Arrival</div>
-            </summary>
-            <div class="day-body">
-              <ul class="timeline">
-                <li>
-                  <div class="time">Morning</div>
-                  <div>
-                    <div class="event-title">Fly into Salt Lake City Airport (SLC)</div>
-                    <div class="event-note">The retreat page says SLC is about 40 miles / ~45 minutes from the resort.</div>
-                  </div>
-                </li>
-                <li>
-                  <div class="time">After landing</div>
-                  <div>
-                    <div class="event-title">Pick up transportation and drive to Park City</div>
-                    <div class="event-note">Use a rental car or shuttle; the retreat page says you’re responsible for your own transport.</div>
-                  </div>
-                </li>
-                <li>
-                  <div class="time">Check-in</div>
-                  <div>
-                    <div class="event-title">Check in at Goldener Hirsch</div>
-                    <div class="event-note">Room block hotel for the retreat.</div>
-                  </div>
-                </li>
-                <li>
-                  <div class="time">Evening</div>
-                  <div>
-                    <div class="event-title">Welcome reception</div>
-                    <div class="event-note">Official event kickoff.</div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </details>
+        <div class="section">
+          <h2>Saturday, August 8</h2>
+          <ul>
+            <li>Hold the day for retreat sessions and any work blocks on the agenda.</li>
+            <li>Final agenda details can be added later.</li>
+          </ul>
+        </div>
 
-          <details class="day">
-            <summary>
-              <div class="day-title">
-                <strong>Day 2 — Friday, Aug 7</strong>
-                <span>Mastermind sessions and strategic breakouts</span>
-              </div>
-              <div class="day-badge">Full day</div>
-            </summary>
-            <div class="day-body">
-              <ul class="timeline">
-                <li>
-                  <div class="time">Morning</div>
-                  <div>
-                    <div class="event-title">Breakfast on your own</div>
-                    <div class="event-note">Then head into the first session block.</div>
-                  </div>
-                </li>
-                <li>
-                  <div class="time">Daytime</div>
-                  <div>
-                    <div class="event-title">Intensive mastermind sessions</div>
-                    <div class="event-note">Strategic breakouts and group problem-solving.</div>
-                  </div>
-                </li>
-                <li>
-                  <div class="time">Lunch</div>
-                  <div>
-                    <div class="event-title">Lunch provided onsite</div>
-                    <div class="event-note">The retreat page says lunch is included during sessions.</div>
-                  </div>
-                </li>
-                <li>
-                  <div class="time">Evening</div>
-                  <div>
-                    <div class="event-title">Dinner on your own</div>
-                    <div class="event-note">Time to decompress or connect with other attendees.</div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </details>
-
-          <details class="day">
-            <summary>
-              <div class="day-title">
-                <strong>Day 3 — Saturday, Aug 8</strong>
-                <span>Second full mastermind day</span>
-              </div>
-              <div class="day-badge">Full day</div>
-            </summary>
-            <div class="day-body">
-              <ul class="timeline">
-                <li>
-                  <div class="time">Morning</div>
-                  <div>
-                    <div class="event-title">Breakfast on your own</div>
-                    <div class="event-note">Get to the venue ready for sessions.</div>
-                  </div>
-                </li>
-                <li>
-                  <div class="time">Daytime</div>
-                  <div>
-                    <div class="event-title">Continued sessions, networking, and problem-solving</div>
-                    <div class="event-note">The second deep-work day of the retreat.</div>
-                  </div>
-                </li>
-                <li>
-                  <div class="time">Lunch</div>
-                  <div>
-                    <div class="event-title">Lunch onsite</div>
-                    <div class="event-note">Plan to stay near the event through the full day.</div>
-                  </div>
-                </li>
-                <li>
-                  <div class="time">Evening</div>
-                  <div>
-                    <div class="event-title">Dinner on your own</div>
-                    <div class="event-note">Good night for a quiet reset before departure day.</div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </details>
-
-          <details class="day">
-            <summary>
-              <div class="day-title">
-                <strong>Day 4 — Sunday, Aug 9</strong>
-                <span>Final session and departure</span>
-              </div>
-              <div class="day-badge">Departure</div>
-            </summary>
-            <div class="day-body">
-              <ul class="timeline">
-                <li>
-                  <div class="time">Morning</div>
-                  <div>
-                    <div class="event-title">Final session and late-morning departures</div>
-                    <div class="event-note">The retreat page calls out departures in the late morning.</div>
-                  </div>
-                </li>
-                <li>
-                  <div class="time">Before leaving</div>
-                  <div>
-                    <div class="event-title">Hotel checkout</div>
-                    <div class="event-note">Confirm checkout timing based on your room and flight.</div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </details>
+        <div class="section">
+          <h2>Sunday, August 9</h2>
+          <ul>
+            <li>Departure day.</li>
+            <li>Use the directions link below to head back out once the retreat wraps.</li>
+          </ul>
         </div>
       </section>
 
       <aside class="card">
-        <h2>Quick reference</h2>
-        <div class="two-col">
-          <div class="route">
-            <div class="k">Hotel maps</div>
-            <div class="v"><a href="https://www.google.com/maps/search/?api=1&query=7520+Royal+St+Park+City+UT+84060" target="_blank">Open map</a></div>
-            <div class="m">Goldener Hirsch Auberge Collection</div>
-          </div>
-          <div class="route">
-            <div class="k">SLC airport maps</div>
-            <div class="v"><a href="https://www.google.com/maps/search/?api=1&query=Salt+Lake+City+International+Airport" target="_blank">Open map</a></div>
-            <div class="m">Recommended airport</div>
-          </div>
-          <div class="route">
-            <div class="k">Parking</div>
-            <div class="v">Valet: $40/car</div>
-            <div class="m">At the resort</div>
-          </div>
-          <div class="route">
-            <div class="k">Airport distance</div>
-            <div class="v">~45 minutes</div>
-            <div class="m">SLC → resort</div>
-          </div>
+        <h2>Quick links</h2>
+        <div class="btn-row">
+          <a class="btn primary" href="https://www.google.com/maps/search/?api=1&query=7520+Royal+St+Park+City+UT+84060" target="_blank" rel="noopener">Open resort in Google Maps</a>
+          <a class="btn" href="https://www.google.com/maps/dir/?api=1&origin=Rigby,+ID&destination=7520+Royal+St,+Park+City,+UT+84060" target="_blank" rel="noopener">Directions from Rigby</a>
         </div>
 
         <div class="section">
-          <h2>Rental car found</h2>
+          <h2>Rental car</h2>
           <div class="route">
             <div class="k">Vendor</div>
             <div class="v">Alamo Reservations</div>
             <div class="k" style="margin-top:8px;">Confirmation</div>
             <div class="v">397771467</div>
-            <div class="k" style="margin-top:8px;">Pick-up</div>
+            <div class="k" style="margin-top:8px;">Pickup</div>
             <div class="v">Thu, Aug 6, 2026 · 10:00 AM</div>
             <div class="m">Idaho Falls Air-Alamo (IDA)</div>
             <div class="k" style="margin-top:8px;">Return</div>
             <div class="v">Sun, Aug 9, 2026 · 2:30 PM</div>
             <div class="m">Idaho Falls Air-Alamo (IDA)</div>
-            <div class="k" style="margin-top:8px;">Estimated total</div>
-            <div class="v">$302.00</div>
           </div>
           <div class="small" style="margin-top:10px;">
-            This looks like a different trip than the Park City itinerary. I’d verify it before relying on it.
+            If that car reservation changes, I can update this page later.
           </div>
         </div>
 
         <div class="section">
           <h2>Things to remember</h2>
           <ul class="checklist">
-            <li><span class="check"></span><span>Use <strong>SLC</strong> unless you confirm the IDA car reservation was intentional.</span></li>
-            <li><span class="check"></span><span>Book or confirm your room at <strong>Goldener Hirsch</strong>.</span></li>
-            <li><span class="check"></span><span>Plan for lunch onsite, breakfast and dinner on your own.</span></li>
-            <li><span class="check"></span><span>Leave extra time for airport pickup and mountain drive.</span></li>
-            <li><span class="check"></span><span>Keep the rental confirmation number handy: <strong>397771467</strong>.</span></li>
-          </ul>
-        </div>
-
-        <div class="section">
-          <h2>Useful links</h2>
-          <ul>
-            <li><a href="https://m.healthexpertsalliance.com/epic-retreat-members-2026" target="_blank">EPIC Retreat page</a></li>
-            <li><a href="https://www.google.com/maps/search/?api=1&query=7520+Royal+St+Park+City+UT+84060" target="_blank">Hotel map</a></li>
-            <li><a href="https://www.google.com/maps/search/?api=1&query=Salt+Lake+City+International+Airport" target="_blank">SLC map</a></li>
+            <li><span class="check"></span><span>Be in the room for the <strong>2:00 PM team meeting</strong> on Thursday.</span></li>
+            <li><span class="check"></span><span>Event starts at <strong>3:00 PM</strong> on Thursday.</span></li>
+            <li><span class="check"></span><span>Use the resort directions link to open Google Maps quickly.</span></li>
+            <li><span class="check"></span><span>Final agenda will be added once you send it over.</span></li>
           </ul>
         </div>
       </aside>
     </div>
 
     <div class="footer">
-      Built as a simple mobile-friendly itinerary page for quick access on your phone.
+      Work-trip version · optimized for phone use.
     </div>
   </div>
 </body>
